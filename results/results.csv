@@ -1,0 +1,2 @@
+run,class,sent,received,loss_pct,throughput_mbps,avg_latency_ms,max_latency_ms,jitter_ms
+test,A,500,500,0.0,0.161,0.885,13.737,0.507
