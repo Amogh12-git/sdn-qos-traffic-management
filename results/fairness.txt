@@ -1,0 +1,5 @@
+Jain's fairness index (x = achieved / offered throughput, capped at 1; 1.0 = perfectly even)
+load     baseline   static     adaptive  
+light    1.000      1.000      1.000     
+medium   0.995      0.993      0.993     
+heavy    0.969      0.879      0.879     
