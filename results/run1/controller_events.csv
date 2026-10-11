@@ -1,0 +1,175 @@
+1791716198.248,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": {""A"": 1, ""B"": 2, ""C"": 3} }"
+1791716261.216,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791716261.216,QOS_ON,util=0.0 demand=20.0 threshold=8.0 Mbps
+1791716261.216,RULE_ADD,udp_dst=5003 class=C queue=3
+1791716270.027,RULE_DEL,udp_dst=5003
+1791716270.028,UNREGISTER,port=5003
+1791716272.412,QOS_OFF,calm for 3 polls
+1791716794.09,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791716794.096,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791716804.906,UNREGISTER,port=5002
+1791716804.912,UNREGISTER,port=5001
+1791716848.661,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791716848.661,QOS_ON,util=0.0 demand=20.0 threshold=8.0 Mbps
+1791716848.661,RULE_ADD,udp_dst=5003 class=C queue=3
+1791716859.476,RULE_DEL,udp_dst=5003
+1791716859.48,UNREGISTER,port=5003
+1791716861.753,QOS_OFF,calm for 3 polls
+1791718111.033,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791718111.033,QOS_ON,util=0.0 demand=20.0 threshold=8.0 Mbps
+1791718111.033,RULE_ADD,udp_dst=5003 class=C queue=3
+1791718121.859,RULE_DEL,udp_dst=5003
+1791718121.859,UNREGISTER,port=5003
+1791718124.719,QOS_OFF,calm for 3 polls
+1791718778.727,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791718778.773,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791718778.777,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791718778.777,QOS_ON,util=0.0 demand=22.2 threshold=8.0 Mbps
+1791718778.778,RULE_ADD,udp_dst=5001 class=A queue=1
+1791718778.778,RULE_ADD,udp_dst=5002 class=B queue=2
+1791718778.778,RULE_ADD,udp_dst=5003 class=C queue=3
+1791718789.538,RULE_DEL,udp_dst=5001
+1791718789.54,UNREGISTER,port=5001
+1791718789.587,RULE_DEL,udp_dst=5002
+1791718789.588,UNREGISTER,port=5002
+1791718789.593,RULE_DEL,udp_dst=5003
+1791718789.593,UNREGISTER,port=5003
+1791718791.755,QOS_OFF,calm for 3 polls
+1791720033.734,POLICY,"{ ""mode"": ""off"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791720036.97,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791720036.971,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791720036.976,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791720057.783,UNREGISTER,port=5003
+1791720057.789,UNREGISTER,port=5002
+1791720057.789,UNREGISTER,port=5001
+1791720063.792,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791720066.399,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791720066.404,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791720066.404,QOS_ON,util=0.0 demand=22.0 threshold=8.0 Mbps
+1791720066.404,RULE_ADD,udp_dst=5002 class=B queue=2
+1791720066.406,RULE_ADD,udp_dst=5003 class=C queue=3
+1791720066.406,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791720066.406,RULE_ADD,udp_dst=5001 class=A queue=1
+1791720087.212,RULE_DEL,udp_dst=5002
+1791720087.212,UNREGISTER,port=5002
+1791720087.221,RULE_DEL,udp_dst=5003
+1791720087.222,UNREGISTER,port=5003
+1791720087.228,RULE_DEL,udp_dst=5001
+1791720087.228,UNREGISTER,port=5001
+1791720089.845,QOS_OFF,calm for 3 polls
+1791722509.047,POLICY,"{ ""mode"": ""off"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722511.645,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722511.65,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722511.651,REGISTER,port=5003 class=C rate=3.00 Mbps
+1791722532.463,UNREGISTER,port=5002
+1791722532.467,UNREGISTER,port=5001
+1791722532.468,UNREGISTER,port=5003
+1791722538.107,POLICY,"{ ""mode"": ""always"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722538.107,QOS_ON,mode=always
+1791722541.084,REGISTER,port=5003 class=C rate=3.00 Mbps
+1791722541.084,RULE_ADD,udp_dst=5003 class=C queue=3
+1791722541.09,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722541.091,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722541.098,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722541.099,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722561.906,RULE_DEL,udp_dst=5003
+1791722561.907,UNREGISTER,port=5003
+1791722561.913,RULE_DEL,udp_dst=5002
+1791722561.914,UNREGISTER,port=5002
+1791722561.914,RULE_DEL,udp_dst=5001
+1791722561.914,UNREGISTER,port=5001
+1791722567.161,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722570.504,REGISTER,port=5003 class=C rate=3.00 Mbps
+1791722570.505,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722570.506,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722591.33,UNREGISTER,port=5002
+1791722591.33,UNREGISTER,port=5001
+1791722591.331,UNREGISTER,port=5003
+1791722597.233,POLICY,"{ ""mode"": ""off"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722599.974,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722599.975,REGISTER,port=5003 class=C rate=9.00 Mbps
+1791722599.979,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722620.803,UNREGISTER,port=5002
+1791722620.804,UNREGISTER,port=5001
+1791722620.809,UNREGISTER,port=5003
+1791722626.299,POLICY,"{ ""mode"": ""always"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722626.299,QOS_ON,mode=always
+1791722629.408,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722629.409,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722629.409,REGISTER,port=5003 class=C rate=9.00 Mbps
+1791722629.409,RULE_ADD,udp_dst=5003 class=C queue=3
+1791722629.409,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722629.41,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722650.23,RULE_DEL,udp_dst=5002
+1791722650.234,UNREGISTER,port=5002
+1791722650.235,RULE_DEL,udp_dst=5003
+1791722650.239,UNREGISTER,port=5003
+1791722650.24,RULE_DEL,udp_dst=5001
+1791722650.244,UNREGISTER,port=5001
+1791722655.385,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722658.868,REGISTER,port=5003 class=C rate=9.00 Mbps
+1791722658.869,QOS_ON,util=0.0 demand=9.0 threshold=8.0 Mbps
+1791722658.87,RULE_ADD,udp_dst=5003 class=C queue=3
+1791722658.87,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722658.871,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722658.874,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722658.875,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722679.69,RULE_DEL,udp_dst=5001
+1791722679.694,UNREGISTER,port=5001
+1791722679.698,RULE_DEL,udp_dst=5002
+1791722679.699,UNREGISTER,port=5002
+1791722679.702,RULE_DEL,udp_dst=5003
+1791722679.702,UNREGISTER,port=5003
+1791722682.453,QOS_OFF,calm for 3 polls
+1791722685.456,POLICY,"{ ""mode"": ""off"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722688.291,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722688.294,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722688.296,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791722709.107,UNREGISTER,port=5002
+1791722709.109,UNREGISTER,port=5003
+1791722709.112,UNREGISTER,port=5001
+1791722714.514,POLICY,"{ ""mode"": ""always"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722714.515,QOS_ON,mode=always
+1791722717.699,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791722717.699,RULE_ADD,udp_dst=5003 class=C queue=3
+1791722717.707,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722717.708,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722717.711,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722717.712,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722738.514,RULE_DEL,udp_dst=5003
+1791722738.519,UNREGISTER,port=5003
+1791722738.53,RULE_DEL,udp_dst=5001
+1791722738.531,UNREGISTER,port=5001
+1791722738.536,RULE_DEL,udp_dst=5002
+1791722738.537,UNREGISTER,port=5002
+1791722743.579,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722747.134,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722747.138,REGISTER,port=5003 class=C rate=20.00 Mbps
+1791722747.138,QOS_ON,util=0.0 demand=20.2 threshold=8.0 Mbps
+1791722747.138,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722747.139,RULE_ADD,udp_dst=5003 class=C queue=3
+1791722747.143,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722747.144,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722767.95,RULE_DEL,udp_dst=5001
+1791722767.95,UNREGISTER,port=5001
+1791722767.964,RULE_DEL,udp_dst=5003
+1791722767.965,UNREGISTER,port=5003
+1791722767.965,RULE_DEL,udp_dst=5002
+1791722767.966,UNREGISTER,port=5002
+1791722770.64,QOS_OFF,calm for 3 polls
+1791722773.642,POLICY,"{ ""mode"": ""off"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722776.57,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722776.571,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722807.383,UNREGISTER,port=5002
+1791722807.384,UNREGISTER,port=5001
+1791722812.725,POLICY,"{ ""mode"": ""adaptive"", ""capacity_mbps"": 10.0, ""high_pct"": 80, ""low_pct"": 50, ""queues"": { ""A"": 1, ""B"": 2, ""C"": 3 } }"
+1791722815.983,REGISTER,port=5002 class=B rate=2.00 Mbps
+1791722815.987,REGISTER,port=5001 class=A rate=0.16 Mbps
+1791722824.751,QOS_ON,util=8.3 demand=2.2 threshold=8.0 Mbps
+1791722824.752,RULE_ADD,udp_dst=5002 class=B queue=2
+1791722824.752,RULE_ADD,udp_dst=5001 class=A queue=1
+1791722841.794,QOS_OFF,calm for 3 polls
+1791722841.795,RULE_DEL,udp_dst=5001
+1791722841.796,RULE_DEL,udp_dst=5002
+1791722846.805,UNREGISTER,port=5001
+1791722846.807,UNREGISTER,port=5002
